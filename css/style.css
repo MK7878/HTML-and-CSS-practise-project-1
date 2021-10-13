@@ -1,0 +1,301 @@
+
+/*=========================
+Default CSS==============*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.5rem;
+	outline: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+::selection{
+	background: lightcoral;
+	color: #fff;
+}
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
+.left{
+	float: left;
+}.left::before{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.right{
+	float: right;
+}.right::before{
+	content: "";
+	clear: both;
+	display: block;
+}
+img{
+	max-width: 100%;
+}
+
+.defualtBtn{
+	background: #273c66;
+	color: #fff;
+	padding: 13px 27px;
+	font-size: 22px;
+	position: relative;
+	z-index: 2;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.defualtBtn::before{
+	content: "";
+	position: absolute;
+	left: 0%;
+	top: 0;
+	width: 0%;
+	height: 100%;
+	background: red;
+	display: block;
+	z-index: -1;
+	transition: 0.4s;
+	border-radius: 5px;
+
+}
+.defualtBtn:hover::before{
+	width: 100%;
+}
+
+
+
+/*===================================
+Header Area========================*/
+
+#headerArea{
+	background: #273c66;
+	color: #fff;
+
+}
+.headerWrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerLeft a{
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+.headerLeft a:hover{
+	color: goldenrod;
+}
+
+.primaryMenu{
+	cursor: pointer;
+}
+.primaryMenu ul{
+    list-style: none;
+}
+.primaryMenu ul li{
+    display: inline-block;
+}
+.primaryMenu ul li a{
+	display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+    padding: 20px;
+}
+
+.primaryMenu ul li{
+    position: relative;
+}
+.primaryMenu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    height: auto;
+    background: #273c96 !important;
+    text-align: left;
+    z-index: 22;    
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: top left;
+    display: block;
+
+}
+.primaryMenu ul li:hover{
+	background: red;
+}
+.primaryMenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.primaryMenu ul li ul a{
+	display: block;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.primaryMenu ul li ul li{
+    position: relative;
+}
+.primaryMenu ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+.primaryMenu ul li ul{
+    background: #fff;
+
+}
+.primaryMenu ul li ul li{
+
+}
+
+.primaryMenu ul li ul li{
+    width: 115px;
+    display: block;
+}
+.primaryMenu ul li ul li .subDropdown{
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    transform: scaleY(0);
+    transition: 0.5s;
+    transform-origin: top;
+}
+.primaryMenu ul li ul li:hover .subDropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+
+}
+
+
+
+
+/*===========================
+Social Icon Box==============*/
+#heroArea{
+	position: relative;
+}
+.socialArea{
+	position: absolute;
+	top: 45%;
+	left: 1%;
+	transform: translateY(-50%);
+	z-index: 222;
+}
+.socialIcon a{
+	transition: 0.4s;
+}
+.socialIcon a:hover{
+	background: gray;
+}
+.socialIcon > a{
+	display: inline-block;
+	color: #fff;
+	font-size: 23px;
+}
+.firstSocialIcon{
+	background: red;
+	padding: 10px;
+	width: 50px;
+	height: 100%;
+}
+.secondSocialIcon{
+	background: blue;
+	padding: 10px;
+	width: 50px;
+	height: 100%;
+
+}
+.thirdSocialIcon{
+	background: green;
+	padding: 10px;
+	width: 50px;
+	height: 100%;
+
+}
+
+
+
+/*====================================
+Hero Area============================*/
+#heroArea{
+	background: #f9f9ff;
+	width: 100%;
+	height: 100vh;
+}
+.heroAreaWrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.heroLeft{
+	flex-basis: 40%;
+}
+.heroRight{
+	flex-basis: 40%;
+}
+.heroRightWrapper img{
+	max-width: 100%;
+}
+.heroLeftWraper{
+	position: relative;
+	top: 50%;
+}
+.heroLeftWraper h1{
+	font-size: 40px;
+}
+.heroLeftWraper p{
+	width: 570px;
+	opacity: 0.5;
+	font-size: 16px;
+}
+
+
+
+
+/*=======================================
+Footer Area============================*/
+
+#footerArea{
+	background: #273c66;
+	padding: 15px 0;
+	color: #fff;	
+}
+footer h3{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
